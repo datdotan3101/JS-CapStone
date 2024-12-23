@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+  position: absolute;
+}
+/* CAROUSEL  */
+.carousel {
+  height: 800px;
+  background-image: url("../../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.carousel_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  font-size: 1.5rem;
+  align-items: center;
+}
+.content h1 {
+  color: blue;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* Products */
+.prod_content h1 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.gioHang {
+  display: flex;
+  justify-content: left;
+}
+#products {
+  margin-top: 20px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cartModal {
+  z-index: 10;
+}
+.images {
+  width: 100%;
+  height: auto;
+}
+#gioHang {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.moTaSP {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5; /* Khoảng cách giữa các dòng */
+  min-height: calc(2 * 1.5em); /* Chiều cao tối thiểu là 2 dòng */
+}
